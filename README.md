@@ -1,4 +1,8 @@
-# Agentic RAG System: Government Regulations & Compliance
+# Policy-Navigator-Agent--AiXplain
+
+An Agentic RAG system that allows users to query and extract insights from complex government regulations, compliance policies, and public health guidelines.
+
+---
 
 ## Project Overview
 This project implements an Agentic Retrieval-Augmented Generation (RAG) system that allows users to query and extract insights from complex government regulations, compliance policies, and public health guidelines. The system leverages multiple agents, vector-based document retrieval, and integrates with external APIs and datasets.
@@ -46,7 +50,3 @@ This project implements an Agentic Retrieval-Augmented Generation (RAG) system t
 ## References
 - [aiXplain Documentation](https://docs.aixplain.com/)
 - [California Vehicle Code](https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH)
-
----
-
-*See the code and comments for further implementation details.* 
