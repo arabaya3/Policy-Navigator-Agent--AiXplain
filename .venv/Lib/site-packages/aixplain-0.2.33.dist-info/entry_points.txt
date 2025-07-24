@@ -1,0 +1,2 @@
+[console_scripts]
+aixplain = aixplain.cli_groups:run_cli

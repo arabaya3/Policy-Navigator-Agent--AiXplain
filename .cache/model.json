@@ -1,0 +1,245 @@
+{
+    "expiry": 1753442443.2221625,
+    "data": {
+        "6734c55df127847059324d9e": {
+            "id": "6734c55df127847059324d9e",
+            "name": "Text Embedding Batch [ada 002]",
+            "description": " The OpenAI embedding model is designed to convert text (such as sentences, paragraphs, or even entire documents) into numerical vectors, which capture the semantic meaning of the text. These vectors can then be used for a variety of NLP tasks, like search, clustering, or recommendations. NOTE: This model takes in an array of strings as input to be processed in a batch",
+            "supplier": {
+                "id": 1777,
+                "name": "OpenAI",
+                "code": "openai"
+            },
+            "additional_info": {
+                "code": "",
+                "attributes": [
+                    {
+                        "name": "embeddingSize",
+                        "value": 1536
+                    }
+                ],
+                "embedding_size": 1536
+            },
+            "input_params": {
+                "text": {
+                    "name": "Text",
+                    "code": "text",
+                    "required": true,
+                    "isFixed": false,
+                    "dataType": "text",
+                    "dataSubType": "text",
+                    "multipleValues": false,
+                    "defaultValues": []
+                },
+                "language": {
+                    "name": "Language",
+                    "code": "language",
+                    "required": true,
+                    "isFixed": true,
+                    "dataType": "label",
+                    "dataSubType": "label",
+                    "multipleValues": false,
+                    "defaultValues": []
+                },
+                "dialect": {
+                    "name": "Dialect",
+                    "code": "dialect",
+                    "required": false,
+                    "isFixed": true,
+                    "dataType": "label",
+                    "dataSubType": "label",
+                    "multipleValues": false,
+                    "defaultValues": []
+                },
+                "script": {
+                    "name": "Script",
+                    "code": "script",
+                    "required": false,
+                    "isFixed": true,
+                    "dataType": "label",
+                    "dataSubType": "label",
+                    "multipleValues": false,
+                    "defaultValues": []
+                }
+            },
+            "output_params": {
+                "data": {
+                    "name": "Embedding",
+                    "code": "data",
+                    "dataType": "label"
+                }
+            },
+            "model_params": {
+                "text": {
+                    "required": true,
+                    "value": null
+                }
+            },
+            "function": "text-embedding",
+            "status": "onboarded"
+        },
+        "669a63646eb56306647e1091": {
+            "id": "669a63646eb56306647e1091",
+            "name": "GPT-4o Mini",
+            "description": "Creates coherent and contextually relevant textual content based on prompts or certain parameters. Useful for chatbots, content creation, and data augmentation.",
+            "supplier": {
+                "id": 1777,
+                "name": "OpenAI",
+                "code": "openai"
+            },
+            "version": "gpt-4o-mini",
+            "license": null,
+            "privacy": {
+                "_value_": "Private",
+                "_name_": "PRIVATE",
+                "__objclass__": "{'_generate_next_value_': <function Enum._generate_next_value_ at 0x000001AFD82B9C60>, '__module__': 'aixplain.enums.privacy', '_new_member_': <built-in method __new__ of type object at 0x00007FF9EFF60E30>, '_use_args_': False, '_member_names_': ['PUBLIC', 'PRIVATE', 'RESTRICTED'], '_member_map_': {'PUBLIC': <Privacy.PUBLIC: 'Public'>, 'PRIVATE': <Privacy.PRIVATE: 'Private'>, 'RESTRICTED': <Privacy.RESTRICTED: 'Restricted'>}, '_value2member_map_': {'Public': <Privacy.PUBLIC: 'Public'>, 'Private': <Privacy.PRIVATE: 'Private'>, 'Restricted': <Privacy.RESTRICTED: 'Restricted'>}, '_unhashable_values_': [], '_member_type_': <class 'object'>, '_value_repr_': None, '__doc__': None, 'PUBLIC': <Privacy.PUBLIC: 'Public'>, 'PRIVATE': <Privacy.PRIVATE: 'Private'>, 'RESTRICTED': <Privacy.RESTRICTED: 'Restricted'>, '__new__': <function Enum.__new__ at 0x000001AFD82B9F80>}",
+                "_sort_order_": 1
+            },
+            "cost": {
+                "price": 6e-07,
+                "unitType": "TOKEN",
+                "unitTypeScale": null
+            },
+            "api_key": "2de0b04cb2f0dc75f86bad241fc1af2b279c6f3410a45bb84bf00871caaed551",
+            "additional_info": {
+                "code": "",
+                "parameters": {
+                    "language": [
+                        "en"
+                    ],
+                    "temperature": [
+                        "0"
+                    ],
+                    "max_tokens": [
+                        "200"
+                    ],
+                    "history": [
+                        ""
+                    ]
+                },
+                "inputs": [],
+                "attributes": null
+            },
+            "url": "https://models.aixplain.com/api/v1/execute",
+            "backend_url": "https://platform-api.aixplain.com",
+            "function": "text-generation",
+            "is_subscribed": false,
+            "created_at": "2024-11-19 14:43:54.873000+00:00",
+            "input_params": {
+                "text": {
+                    "name": "Text",
+                    "code": "text",
+                    "required": true,
+                    "isFixed": false,
+                    "dataType": "text",
+                    "dataSubType": "text",
+                    "multipleValues": false,
+                    "defaultValues": []
+                },
+                "temperature": {
+                    "name": "Temperature",
+                    "code": "temperature",
+                    "required": false,
+                    "isFixed": false,
+                    "dataType": "number",
+                    "dataSubType": "number",
+                    "multipleValues": false,
+                    "defaultValues": []
+                },
+                "prompt": {
+                    "name": "Prompt",
+                    "code": "prompt",
+                    "required": false,
+                    "isFixed": false,
+                    "dataType": "text",
+                    "dataSubType": "text",
+                    "multipleValues": false
+                },
+                "context": {
+                    "name": "Context",
+                    "code": "context",
+                    "required": false,
+                    "isFixed": false,
+                    "dataType": "text",
+                    "dataSubType": "text",
+                    "multipleValues": false
+                },
+                "language": {
+                    "name": "Language",
+                    "code": "language",
+                    "required": false,
+                    "isFixed": true,
+                    "dataType": "label",
+                    "dataSubType": "label",
+                    "multipleValues": false,
+                    "defaultValues": []
+                },
+                "script": {
+                    "name": "Script",
+                    "code": "script",
+                    "required": false,
+                    "isFixed": true,
+                    "dataType": "label",
+                    "dataSubType": "label",
+                    "multipleValues": false,
+                    "defaultValues": []
+                }
+            },
+            "output_params": {
+                "data": {
+                    "name": "Text",
+                    "code": "data",
+                    "defaultValue": [],
+                    "dataType": "text"
+                }
+            },
+            "model_params": {
+                "text": {
+                    "required": true,
+                    "value": null
+                },
+                "template": {
+                    "required": false,
+                    "value": null
+                },
+                "prompt": {
+                    "required": false,
+                    "value": null
+                },
+                "context": {
+                    "required": false,
+                    "value": null
+                },
+                "language": {
+                    "required": true,
+                    "value": null
+                },
+                "script": {
+                    "required": false,
+                    "value": null
+                },
+                "temperature": {
+                    "required": false,
+                    "value": null
+                },
+                "max_tokens": {
+                    "required": false,
+                    "value": null
+                },
+                "history": {
+                    "required": false,
+                    "value": null
+                }
+            },
+            "supports_streaming": true,
+            "function_type": {
+                "_value_": "ai",
+                "_name_": "AI",
+                "__objclass__": "{'_generate_next_value_': <function Enum._generate_next_value_ at 0x000001AFD82B9C60>, '__module__': 'aixplain.enums.function_type', '_new_member_': <built-in method __new__ of type object at 0x00007FF9EFF60E30>, '_use_args_': False, '_member_names_': ['AI', 'SEGMENTOR', 'RECONSTRUCTOR', 'UTILITY', 'METRIC', 'SEARCH', 'INTEGRATION', 'CONNECTION', 'MCP_CONNECTION', 'MCPSERVER'], '_member_map_': {'AI': <FunctionType.AI: 'ai'>, 'SEGMENTOR': <FunctionType.SEGMENTOR: 'segmentor'>, 'RECONSTRUCTOR': <FunctionType.RECONSTRUCTOR: 'reconstructor'>, 'UTILITY': <FunctionType.UTILITY: 'utility'>, 'METRIC': <FunctionType.METRIC: 'metric'>, 'SEARCH': <FunctionType.SEARCH: 'search'>, 'INTEGRATION': <FunctionType.INTEGRATION: 'connector'>, 'CONNECTION': <FunctionType.CONNECTION: 'connection'>, 'MCP_CONNECTION': <FunctionType.MCP_CONNECTION: 'mcpconnection'>, 'MCPSERVER': <FunctionType.MCPSERVER: 'mcpserver'>}, '_value2member_map_': {'ai': <FunctionType.AI: 'ai'>, 'segmentor': <FunctionType.SEGMENTOR: 'segmentor'>, 'reconstructor': <FunctionType.RECONSTRUCTOR: 'reconstructor'>, 'utility': <FunctionType.UTILITY: 'utility'>, 'metric': <FunctionType.METRIC: 'metric'>, 'search': <FunctionType.SEARCH: 'search'>, 'connector': <FunctionType.INTEGRATION: 'connector'>, 'connection': <FunctionType.CONNECTION: 'connection'>, 'mcpconnection': <FunctionType.MCP_CONNECTION: 'mcpconnection'>, 'mcpserver': <FunctionType.MCPSERVER: 'mcpserver'>}, '_unhashable_values_': [], '_member_type_': <class 'object'>, '_value_repr_': None, '__doc__': None, 'AI': <FunctionType.AI: 'ai'>, 'SEGMENTOR': <FunctionType.SEGMENTOR: 'segmentor'>, 'RECONSTRUCTOR': <FunctionType.RECONSTRUCTOR: 'reconstructor'>, 'UTILITY': <FunctionType.UTILITY: 'utility'>, 'METRIC': <FunctionType.METRIC: 'metric'>, 'SEARCH': <FunctionType.SEARCH: 'search'>, 'INTEGRATION': <FunctionType.INTEGRATION: 'connector'>, 'CONNECTION': <FunctionType.CONNECTION: 'connection'>, 'MCP_CONNECTION': <FunctionType.MCP_CONNECTION: 'mcpconnection'>, 'MCPSERVER': <FunctionType.MCPSERVER: 'mcpserver'>, '__new__': <function Enum.__new__ at 0x000001AFD82B9F80>}",
+                "_sort_order_": 0
+            },
+            "status": "onboarded",
+            "temperature": 0.0
+        }
+    }
+}

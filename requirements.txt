@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+pandas
+python-dotenv
+rich
+aixplain 
+slack_sdk 
